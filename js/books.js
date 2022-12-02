@@ -10,6 +10,11 @@ function Book(title, author, pages, read) {
     }
 }
 
+document.getElementById("addBook").addEventListener("submit", function(e) {
+    e.preventDefault()
+    addBookToLibrary()
+})
+
 function addBookToLibrary() {
     newTitle = document.getElementById("title").value;
     newAuthor = document.getElementById("author").value;
@@ -26,6 +31,10 @@ function addBookToLibrary() {
     myLibrary.push(newBook)
 
     console.table(myLibrary)
+}
+
+function displayLibrary() {
+
 }
 
 const theHobbit = new Book("The Hobbit", "J.R.R. Tolkien", 295, "not read")
