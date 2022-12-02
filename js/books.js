@@ -34,8 +34,15 @@ function addBookToLibrary() {
 }
 
 function displayLibrary() {
-
+    if (myLibrary.length === 0){
+        document.getElementById("library").innerHTML = "Your Library is empty! Add a new book below!"
+    } else {
+        for (let i = 0; i < myLibrary.length; i++) {
+            console.log("inside for")
+        }
+    }
 }
 
 const theHobbit = new Book("The Hobbit", "J.R.R. Tolkien", 295, "not read")
 console.log(theHobbit.info())
+displayLibrary()
