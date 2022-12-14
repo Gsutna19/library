@@ -35,14 +35,22 @@ function addBookToLibrary() {
 
 function displayLibrary() {
     if (myLibrary.length === 0){
-        document.getElementById("library").innerHTML = "Your Library is empty! Add a new book below!"
+        document.getElementById("library").innerHTML = "Your Library is empty! Add a new book below!";
     } else {
         for (let i = 0; i < myLibrary.length; i++) {
-            console.log("inside for")
+            // console.log("inside for")
+            let div = document.createElement("div");
+            div.classList.add = "card";
+            let par = document.createElement("p");
+            par.classList.add = "title";
+
+
+
         }
     }
 }
 
 const theHobbit = new Book("The Hobbit", "J.R.R. Tolkien", 295, "not read")
 console.log(theHobbit.info())
-displayLibrary()
+console.log(library.length)
+// displayLibrary()
