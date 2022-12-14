@@ -38,19 +38,42 @@ function displayLibrary() {
         document.getElementById("library").innerHTML = "Your Library is empty! Add a new book below!";
     } else {
         for (let i = 0; i < myLibrary.length; i++) {
-            // console.log("inside for")
-            let div = document.createElement("div");
-            div.classList.add = "card";
-            let par = document.createElement("p");
-            par.classList.add = "title";
+            // Create Card
+            let card = document.createElement("div");
+            card.classList.add = "card";
+            // To create title text and display it inside card
+            let bookTitle = document.createElement("p");
+            bookTitle.classList.add = "title";
+            let titleText = document.createTextNode(myLibrary[i].title)
+            bookTitle.appendChild(titleText);
+            card.appendChild(bookTitle);
+            // To create author text and display it inside card
+            let bookAuthor = document.createElement("p");
+            bookAuthor.classList.add = "author";
+            let authorText = document.createTextNode(myLibrary[i].author)
+            bookAuthor.appendChild(authorText);
+            card.appendChild(bookAuthor);
+            // To create pages text and display it inside card
+            let bookPages = document.createElement("p");
+            bookPages.classList.add = "pages";
+            let pagesText = document.createTextNode(myLibrary[i].pages)
+            bookPages.appendChild(pagesText);
+            card.appendChild(bookPages);
+            // To create "read/not read" text and display it inside card
+            let bookRead = document.createElement("p");
+            bookRead.classList.add = "read";
+            let readText = document.createTextNode(myLibrary[i].read)
+            bookRead.appendChild(readText);
+            card.appendChild(bookRead);
 
-
-
+            // Display Library
+            document.getElementById("library").append(card);
+            
         }
     }
 }
 
-const theHobbit = new Book("The Hobbit", "J.R.R. Tolkien", 295, "not read")
+// const theHobbit = new Book("The Hobbit", "J.R.R. Tolkien", 295, "not read")
 console.log(theHobbit.info())
-console.log(library.length)
+// console.log(library.length)
 // displayLibrary()
