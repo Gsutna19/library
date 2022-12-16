@@ -57,7 +57,7 @@ p, input {
     font-size: 1.25rem;
 }
 
-.prim-btn {
+.prim-btn, .sec-btn {
     margin-top: 8px;
     font-size: 1.35rem;
     border: solid 1px #61590c;
@@ -70,7 +70,18 @@ button {
     margin-bottom: 16px;
 }
 
+.sec-btn {
+    padding: 4px 8px 4px 8px;
+    color: #61590c;
+    background-color: transparent;
+    max-width: fit-content;
+    margin : 0;
+}
+
+
 #library {
+    display: flex;
+    flex-wrap: wrap;
     padding: 16px;
     min-height: 200px;
 }
@@ -112,4 +123,41 @@ input:focus {
 
 input[type=radio] {
     accent-color: #61590c;
+}
+
+/* CARDS */
+
+
+.card {
+    padding: 8px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 1px 2px 8px;
+    border-radius: 16px;
+    width: 300px;
+    margin: 8px 8px 8px 8px;
+}
+
+.card > .sec-btn {
+    color: #663F00;
+}
+
+.title {
+    font-size: 1.95rem;
+    color: #575540;
+}
+
+.author {
+    font-size: 1.5rem;
+}
+
+.together {
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px; 
+}
+
+.read {
+    min-width: 100px;
+    margin-right: 16px;
 }
