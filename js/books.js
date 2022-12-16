@@ -15,6 +15,7 @@ document.getElementById("addBook").addEventListener("submit", function(e) {
     addBookToLibrary()
 })
 
+// To change read status of book
 Book.prototype.toggleRead = function() {
     if (this.read == "read") {
         this.read = "not read"
@@ -25,6 +26,7 @@ Book.prototype.toggleRead = function() {
     console.log(this.read)
     return this.read
 }
+
 
 function addBookToLibrary() {
     newTitle = document.getElementById("title").value;
