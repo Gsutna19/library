@@ -1,7 +1,115 @@
-body {
+@import url('https://fonts.googleapis.com/css2?family=La+Belle+Aurore&family=Varela+Round&display=swap');
+
+body, p, h1 {
     margin: 0;
 }
 
+body {
+    font-family: 'Varela Round', sans-serif;
+}
+
+/* Colors */
+header, footer, .prim-btn {
+    background-color: #61590c;
+}
+
+/* Header */
+header {
+    font-size: 1.5rem;
+    padding: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav > a {
+    padding-left: 16px;
+}
+
+a, a:visited, footer > p {
+    color: #F0e692;
+    text-decoration: none;
+}
+
+nav > a:hover, header > a:hover, button:hover {
+    opacity: 0.70;
+}
+
+#logo {
+    font-family: 'La Belle Aurore', cursive;
+    font-size: 2rem;
+    
+}
+
+/* MAIN */
+main {
+    padding-left: 32px;
+    background-color: #fef9e7;
+}
+
 h1 {
-    color: green;
+    padding-top: 16px;
+    /* margin-left: 32px; */
+    color: #575540;
+}
+
+p, input {
+    font-size: 1.25rem;
+}
+
+.prim-btn {
+    margin-top: 8px;
+    font-size: 1.35rem;
+    border: solid 1px #61590c;
+    border-radius: 16px;
+}
+
+button {
+    padding: 4px 8px 4px 8px;
+    color:#F0e692;
+    margin-bottom: 16px;
+}
+
+#library {
+    padding: 16px;
+    min-height: 200px;
+}
+
+/* FOOTER */
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 50px;
+}
+
+/* FORM */
+fieldset > button {
+    margin-bottom: 0;
+}
+
+fieldset {
+    margin: 16px 0 16px 0;
+    max-width: fit-content;
+}
+
+legend, label {
+    font-size: 1.25rem;
+}
+
+.custom {
+    border-top: 20px solid transparent;
+}
+
+input {
+    background-color: #fef9e7;
+    margin-bottom: 8px;
+}
+
+input:focus {
+    background-color: #d9d19F;
+}
+
+input[type=radio] {
+    accent-color: #61590c;
 }

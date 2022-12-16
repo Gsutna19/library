@@ -49,7 +49,7 @@ function addBookToLibrary() {
 
 function displayLibrary() {
     if (myLibrary.length === 0){
-        document.getElementById("library").innerHTML = "Your Library is empty! Add a new book above!";
+        document.getElementById("library").innerHTML = "<p>Your Library is empty! Add a new book!</p>";
     } else {
         for (let i = 0; i < myLibrary.length; i++) {
             // Create Card

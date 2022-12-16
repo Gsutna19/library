@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/styles.css">
-    <title>Practicing JS Constructors</title>
+    <title>Personal Book Library</title>
 </head>
 <body>
     <header>
@@ -13,16 +13,17 @@
             <a href="index.html">Home</a>
             <a href="newBook.html">Add Book</a>
         </nav>
+        <a id="logo" href="index.html">Personal Library</a>
     </header>
     <main>
 
-        <h1>You Library</h1>
+        <h1>Your Library</h1>
 
         <div id="library">
-            
+            <p>Your books will show here.</p>
         </div>
-    
-        <a href="newBook.html">Add a New Book</a>
+        <button class="prim-btn"><a href="newBook.html">Add New Book</a></button>
+        <button class="prim-btn" type="button" onclick="displayLibrary()">Show Library</button>
     </main>
     <footer>
         <p>Copyright &copy; 2022 Gsutna19</p>
