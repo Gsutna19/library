@@ -1,14 +1,49 @@
 let myLibrary = [];
 
-function Book(title, author, pages, read) {
-    this.title = title
-    this.author = author
-    this.pages = pages
-    this.read = read
-    this.info = function() {
-        return `${title} by ${author}, ${pages} pages, I have ${read} it.`
+class Book {
+    constructor(title, author, pages, read) {
+        this.title = title;
+        this.author = author;
+        this.pages = pages;
+        this.read = read;
     }
+    get title() {
+        return this._title;
+    }
+    get author() {
+        return this._author;
+    }
+    get pages() {
+        return this._pages;
+    }
+    get read() {
+        return this._read;
+    }
+
+    set title(tValue) {
+        this._title = tValue;
+    }
+    set author(aValue) {
+        this._author = aValue;
+    }
+    set pages(pValue) {
+        this._pages = pValue;
+    }
+    set read(rValue) {
+        this._read = rValue;
+    }
+
 }
+
+// function Book(title, author, pages, read) {
+//     this.title = title
+//     this.author = author
+//     this.pages = pages
+//     this.read = read
+//     this.info = function() {
+//         return `${title} by ${author}, ${pages} pages, I have ${read} it.`
+//     }
+// }
 
 document.getElementById("addBook").addEventListener("submit", function(e) {
     e.preventDefault()
