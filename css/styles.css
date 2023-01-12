@@ -71,6 +71,7 @@ button {
 }
 
 .sec-btn {
+    align-self: center;
     padding: 4px 8px 4px 8px;
     color: #61590c;
     background-color: transparent;
